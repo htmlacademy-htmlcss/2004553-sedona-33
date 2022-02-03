@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <title>Седона - Главная</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
   <!-- Ссылки в хедере слева -->
   <header class="header">
     <a href="index.html" class="header-logo-link">
-      <img src="" alt="Логотип Седона" class="header-logo">
+      <img src="image/svg/logo-sedona.svg" width="139" height="70" alt="Логотип Седона"
+        class="header-logo">
     </a>
     <nav class="header-nav">
       <ul class="nav-list">
@@ -34,14 +38,14 @@
       <li class="list-item">
         <a href="#" class="list-link-search">
           <span class="visually-hidden">
-            Поиск на странице
+            Поиск на странице.
           </span>
         </a>
       </li>
       <li class="list-item">
         <a href="#" class="list-link-like">
           <span class="visually-hidden">
-            Избранное
+            Избранное.
           </span>
         </a>
       </li>
@@ -56,7 +60,7 @@
     <!-- Секция с заголовком и фоновым изображением -->
     <section class="welcome">
       <h1 class="visually-hidden">
-        Sedona
+        Sedona.
       </h1>
       <b class="title">
         Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -78,11 +82,10 @@
           <p class="advantage-description">
             Седона — не аттракцион для туристов, там течёт своя жизнь
           </p>
-          <img src="" alt="Улицы города Седона" class="advantage-image-city" />
+          <img src="image/jpg/image-city.jpg" width="800" height="384" alt="Улицы города Седона" class="advantage-image-city">
           <!-- Подраздел со списоком дополнительных преимуществ -->
           <ul class="advantage-additions">
             <li class="additions-item">
-              <img src="" alt="Иконка домик" class="additions-image-home" />
               <h3 class="additions-title">
                 Жильё
               </h3>
@@ -91,7 +94,6 @@
               </p>
             </li>
             <li class="additions-item">
-              <img src="" alt="Иконка Бургер" class="additions-image-burger" />
               <h3 class="additions-title">
                 Еда
               </h3>
@@ -101,7 +103,6 @@
               </p>
             </li>
             <li class="additions-item">
-              <img src="" alt="Иконка Сувениры" class="additions-image-souvenirs" />
               <h3 class="additions-title">
                 Сувениры
               </h3>
@@ -113,7 +114,7 @@
         </li>
         <!-- Секция с преимуществами города Седона продолжение -->
         <li class="advantage-list-item">
-          <img src="" alt="Фото Мост Дьявола в городе Седона " class="advantage-image-bridge" />
+          <img src="image/jpg/image-bridge.jpg" width="800" height="384" alt="Фото Мост Дьявола в городе Седона "class="advantage-image-bridge">
           <h2 class="advantage-title">
             Там есть мост дьявола
           </h2>
@@ -178,11 +179,16 @@
         Подпишитесь на рассылку
       </h2>
       <p class="subscribe-subtitle">
-        Только полезная информация и никакого спама, честное бойскаутское!
+        Только полезная информация и никакого спама, <br> честное бойскаутское!
       </p>
       <form class="email" action="https://echo.htmlacademy.ru/courses" method="get">
-        <label><input type="email" name="email" placeholder="Ваш e-mail"></label>
-        <button type="submit">
+        <label>
+          <span class="visually-hidden">
+            Введите почту чтобы подписаться.
+          </span>
+          <input type="email" name="email" placeholder="Ваш e-mail">
+        </label>
+        <button class="submit" type="submit">
           Подписаться
         </button>
       </form>
@@ -217,7 +223,7 @@
       +7 (812) 812-12-12
     </a>
     <a href="https://htmlacademy.ru/" class="footer-logo-link">
-      <img src="" alt="Логотип html academy" class="footer-logo">
+      <img src="image/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип html academy" class="footer-logo">
     </a>
   </footer>
 </body>
