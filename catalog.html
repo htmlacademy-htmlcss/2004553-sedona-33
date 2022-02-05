@@ -58,6 +58,7 @@
     </ul>
   </header>
   <main class="main-inner">
+    <div class="inner-container">
     <header class="header-inner">
       <h1 class="heade-inner-title">
         Гостиницы Седоны
@@ -71,7 +72,7 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-lik">
+          <a class="breadcrumbs-link">
             Гостиницы
           </a>
         </li>
@@ -90,19 +91,19 @@
           <ul class="hotel-filter-list">
             <li class="hotel-filter-item">
               <label class="control">
-                <input type="checkbox" class="control input" name="pool" checked>
+                <input type="checkbox" class="control-input" name="pool" checked>
                 Бассейн
               </label>
             </li>
             <li class="hotel-filter-item">
               <label class="control">
-                <input type="checkbox" class="control input" name="parking" checked>
+                <input type="checkbox" class="control-input" name="parking" checked>
                 Парковка
               </label>
             </li>
             <li class="hotel-filter-item">
               <label class="control">
-                <input type="checkbox" class="control input" name="wi-fi">
+                <input type="checkbox" class="control-input" name="wi-fi">
                 Wi-Fi
               </label>
             </li>
@@ -115,19 +116,19 @@
           <ul class="hotel-filter-list">
             <li class="hotel-filter-item">
               <label class="control">
-                <input type="radio" class="control input" name="house-filter" value="hotel" checked>
+                <input type="radio" class="control-input" name="house-filter" value="hotel" checked>
                 Гостиница
               </label>
             </li>
             <li class="hotel-filter-item">
               <label class="control">
-                <input type="radio" class="control input" name="house-filter" value="motel">
+                <input type="radio" class="control-input" name="house-filter" value="motel">
                 Мотель
               </label>
             </li>
             <li class="hotel-filter-item">
               <label class="control">
-                <input type="radio" class="control input" name="house-filter" value="apartments">
+                <input type="radio" class="control-input" name="house-filter" value="apartments">
                 Аппартаменты
               </label>
             </li>
@@ -140,6 +141,7 @@
           Сбросить
         </button>
       </form>
+      </div>
       <p class="search-result">
         Найдено гостиниц: 38
       </p>
@@ -314,7 +316,7 @@
       </li>
     </ul>
     <label>
-      <p>
+      <p class="pagination-title">
         Гостиниц на странице
       </p>
       <select name="number-page" class="pagination">
@@ -365,7 +367,7 @@
             </span>
             <input type="email" name="email" placeholder="Ваш e-mail">
           </label>
-          <button type="submit">
+          <button class="submit" type="submit">
             Подписаться
           </button>
         </form>
