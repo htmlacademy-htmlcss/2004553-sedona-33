@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Гостиницы в Седоне</title>
+  <meta charset="utf-8">
+  <title>Седона - Гостиницы</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -13,7 +10,7 @@
   <!-- Ссылки в хедере слева -->
   <header class="header">
     <a href="index.html" class="header-logo-link">
-      <img src="image/svg/logo-sedona.svg" width="139" height="70" alt="Логотип Седона" class="header-logo">
+      <img src="images/svg/logo-sedona.svg" width="139" height="70" alt="Логотип Седона" class="header-logo">
     </a>
     <nav class="header-nav">
       <ul class="nav-list">
@@ -39,14 +36,14 @@
       <li class="list-item">
         <a href="#" class="list-link-search">
           <span class="visually-hidden">
-            Поиск на cтранице.
+            Поиск на странице.
           </span>
         </a>
       </li>
       <li class="list-item">
         <a href="#" class="list-link-like">
           <span class="visually-hidden">
-            Поставить лайк.
+            Избранное.
           </span>
         </a>
       </li>
@@ -57,7 +54,8 @@
       </li>
     </ul>
   </header>
-  <main class="main-inner">
+
+  <main>
     <div class="inner-container">
       <header class="header-inner">
         <h1 class="heade-inner-title">
@@ -91,13 +89,13 @@
             <ul class="hotel-filter-list">
               <li class="hotel-filter-item">
                 <label class="control">
-                  <input type="checkbox" class="control-input" name="pool" checked>
+                  <input type="checkbox" class="control-input" name="pool" checked="">
                   Бассейн
                 </label>
               </li>
               <li class="hotel-filter-item">
                 <label class="control">
-                  <input type="checkbox" class="control-input" name="parking" checked>
+                  <input type="checkbox" class="control-input" name="parking" checked="">
                   Парковка
                 </label>
               </li>
@@ -116,7 +114,7 @@
             <ul class="hotel-filter-list">
               <li class="hotel-filter-item">
                 <label class="control">
-                  <input type="radio" class="control-input" name="house-filter" value="hotel" checked>
+                  <input type="radio" class="control-input" name="house-filter" value="hotel" checked="">
                   Гостиница
                 </label>
               </li>
@@ -141,6 +139,7 @@
             Сбросить
           </button>
         </form>
+      </section>
     </div>
     <p class="search-result">
       Найдено гостиниц: 38
@@ -171,11 +170,10 @@
         Показать список.
       </span>
     </a>
-    </section>
     <!-- Секция с карточками отелей -->
     <section class="hotel-card">
       <div class="hotel-card-item">
-        <img src="image/jpg/image-hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa" class="hotel-image">
+        <img src="images/jpg/image-hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa" class="hotel-image">
         <h2 class="hotel-title">
           Amara Resort & Spa
         </h2>
@@ -201,7 +199,7 @@
         </p>
       </div>
       <div class="hotel-card-item">
-        <img src="image/jpg/image-hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn" class="hotel-image">
+        <img src="images/jpg/image-hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn" class="hotel-image">
         <h2 class="hotel-title">
           Desert Quail Inn
         </h2>
@@ -227,7 +225,7 @@
         </p>
       </div>
       <div class="hotel-card-item">
-        <img src="image/jpg/image-hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo" class="hotel-image">
+        <img src="images/jpg/image-hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo" class="hotel-image">
         <h2 class="hotel-title">
           Villas at Poco Diablo
         </h2>
@@ -253,7 +251,7 @@
         </p>
       </div>
       <div class="hotel-card-item">
-        <img src="image/jpg/image-hotel-4.jpg" width="299" height="206" alt="GreenTree Inn" class="hotel-image">
+        <img src="images/jpg/image-hotel-4.jpg" width="299" height="206" alt="GreenTree Inn" class="hotel-image">
         <h2 class="hotel-title">
           GreenTree Inn
         </h2>
@@ -356,7 +354,7 @@
         Подпишитесь на рассылку
       </h2>
       <p class="subscribe-subtitle">
-        Только полезная информация и никакого спама, честное бойскаутское!
+        Только полезная информация и никакого спама, <br> честное бойскаутское!
       </p>
       <form class="email" action="https://echo.htmlacademy.ru/courses" method="get">
         <label>
@@ -372,6 +370,7 @@
     </section>
   </main>
   <!-- Подвал страницы -->
+
   <footer class="page-footer">
     <ul class="social-media">
       <li class="social-media-list">
@@ -400,9 +399,8 @@
       +7 (812) 812-12-12
     </a>
     <a href="https://htmlacademy.ru/" class="footer-logo-link">
-      <img src="image/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип html academy" class="footer-logo">
+      <img src="images/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип html academy" class="footer-logo">
     </a>
   </footer>
 </body>
-
 </html>

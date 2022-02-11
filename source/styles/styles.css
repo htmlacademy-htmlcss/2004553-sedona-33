@@ -1,105 +1,6 @@
-html {
-  background-color: #e5e5e5;
-}
-
-body {
-  font-family: "Pt Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #ffffff;
-}
-
-.advantage-text {
-  font-size: 22px;
-  line-height: 36px;
-  color: #333333;
-}
-
-.advantage-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.advantage-description {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
-.advantage-additions-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.advantage-card > .advantage-description {
-  color: inherit;
-}
-
-.advantage-card {
-  background-color: rgba(131, 179, 211, 1);
-  color: #ffffff;
-}
-
-.advantage-additions-item {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantage-additions-item:nth-child(2n) {
-  background-color: #ffffff;
-}
-
-.advantage-list-item {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantage-list-item:nth-child(2n) {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.subscribe {
-  background-image: url("../images/jpg/bg-email.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.subscribe-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #ffffff;
-}
-
-.subscribe-subtitle {
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.subscribe-submit {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #83b3d3;
-}
-
-@font-face {
-  font-family: "Pt Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pt Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
+@import url("_global.css");
+@import url("_modules/**/*.css");
+@import url("_fonts.css");
 
 .nav-link {
   font-weight: 700;
@@ -115,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #756257;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .welcome {
@@ -147,7 +48,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #756257;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .submit {
@@ -155,8 +56,8 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #83b3d3;
+  color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 .tel-number {
@@ -169,33 +70,33 @@ body {
   background-image: url("../images/jpg/bg-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .heade-inner-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 77px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .reset {
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: transparent;
   border: none;
 }
@@ -228,7 +129,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #756257;
 }
 
@@ -236,16 +137,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  background-color: #83b3d3;
+  color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 .show-more {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #ffffff;
-  background-color: #83b3d3;
+  color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 .pagination-title {
