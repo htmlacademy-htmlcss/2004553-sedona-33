@@ -2,6 +2,44 @@
 @import url("_modules/**/*.css");
 @import url("_fonts.css");
 
+.header {
+  display: flex;
+  padding: 0 72px;
+}
+
+.header-nav {
+  width: 50%;
+  padding: 20px 17px;
+}
+
+.header-logo-link {
+  margin-right: 30px;
+}
+
+.nav-link {
+  margin-right: 34px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header-list {
+  display: flex;
+  list-style-type: none;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
 .nav-link {
   font-weight: 700;
   font-size: 20px;
@@ -26,9 +64,12 @@
 }
 
 .title {
+  display: block;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .offer-title {
