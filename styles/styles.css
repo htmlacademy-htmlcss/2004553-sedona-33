@@ -170,6 +170,7 @@ body {
 
 .header-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   width: 30%;
   margin: 0;
