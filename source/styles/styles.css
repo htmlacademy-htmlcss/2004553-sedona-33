@@ -1,6 +1,188 @@
-@import url("_global.css");
-@import url("_modules/**/*.css");
-@import url("_fonts.css");
+html {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Pt Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.advantage-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.advantage-title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantage-description {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantage-additions-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantage-card>.advantage-description {
+  color: inherit;
+}
+
+.advantage-card {
+  box-sizing: border-box;
+  background-color: rgba(131, 179, 211, 1);
+  color: #ffffff;
+  width: 33.33333%;
+  text-align: center;
+  padding: 97px 90px 87px;
+}
+
+.advantage-additions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.advantage-additions-item {
+  box-sizing: border-box;
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 33.33333%;
+  padding: 97px 90px 87px;
+}
+
+.advantage-additions-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.advantage-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-list-item {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 33.33333%;
+  padding: 97px 75px 87px;
+}
+
+.advantage-list-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-list-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe {
+  padding: 94px 200px;
+  background-image: url("../images/jpg/bg-email.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.subscribe-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.subscribe-subtitle {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-submit {
+  width: 160px;
+  height: 48px;
+  border-radius: 0 4px 4px 0 ;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #83b3d3;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.email {
+  display: flex;
+  margin-top: 46px;
+}
+
+.input-email {
+  font-size: 18px;
+  line-height: 26px;
+  width: 600px;
+  padding: 11px;
+  padding-left: 22px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+
+}
+
+.button-container {
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px;
+  align-self: flex-end;
+}
+
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pt Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
 
 .header {
   display: flex;
@@ -14,10 +196,6 @@
 
 .header-logo-link {
   margin-right: 30px;
-}
-
-.nav-link {
-  margin-right: 34px;
 }
 
 .main-container {
@@ -36,9 +214,10 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  justify-content: flex-end;
   width: 30%;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
 }
 
 .nav-link {
@@ -47,13 +226,18 @@
   line-height: 26px;
   color: inherit;
   text-decoration: none;
+  margin-right: 34px;
 }
 
 .list-link-search {
+  min-height: 18px;
+  min-width: 18px;
   margin-left: 12px;
 }
 
 .list-link-like {
+  min-height: 18px;
+  min-width: 18px;
   margin-left: 24px;
 }
 
@@ -65,7 +249,7 @@
   font-size: 16px;
   line-height: 20px;
   background-color: #756257;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .welcome {
@@ -82,26 +266,38 @@
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.offer {
+  padding: 93px 240px;
+  text-align: center;
 }
 
 .offer-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
 .offer-subtitle {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
 .offer-link {
+  display: block;
+  margin-top: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   background-color: #756257;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .submit {
@@ -109,8 +305,8 @@
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
 }
 
 .tel-number {
@@ -124,8 +320,8 @@
   background-image: url("../images/jpg/bg-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
-  padding: 0 72px;
+  color: #ffffff;
+  padding: 35px 72px 83px;
 }
 
 .header-inner-title {
@@ -133,21 +329,22 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs {
   display: flex;
   width: 50%;
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin-bottom: 43px;
 }
 
 .hotel-filter {
@@ -155,10 +352,12 @@
 }
 
 .hotel-filter-title {
+  margin-bottom: 30px;
+  padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hotel-filter-list {
@@ -168,18 +367,86 @@
   list-style-type: none;
 }
 
+.hotel-filter-group {
+  margin-right: 30px;
+  margin-left: 0;
+  border: none;
+  padding: 0;
+}
+
+.hotel-filter-group:nth-last-of-type(2) {
+  margin: 0;
+}
+
+.hotel-filter-group:last-of-type {
+  margin-left: 216px;
+  margin-right: 0;
+}
+
+.hotel-selection {
+  margin-top: 45px;
+}
+
+.number-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .reset {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
   border: none;
+  width: 160px;
+  height: 23px;
 }
 
 .search-result {
+  text-transform: uppercase;
+  margin-right: 192px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;
+}
+
+.select-control {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 12px 40px 12px 20px;
+  margin-right: 81px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.button-card {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.button-slide {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.button-list {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .hotel-title {
@@ -204,7 +471,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756257;
 }
 
@@ -212,16 +479,21 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.section-filter {
+  display: flex;
+  padding: 50px 72px;
 }
 
 .show-more {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #FFFFFF;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
 }
 
 .pagination-title {
@@ -233,17 +505,32 @@
 .social-media {
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
+  width: 30%;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.footer-logo-link {
-  margin-left: auto;
+.logo-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
 }
 
 .page-footer {
   display: flex;
   padding: 40px 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
