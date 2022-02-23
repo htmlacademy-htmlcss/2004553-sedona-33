@@ -1,19 +1,6 @@
-html {
-  height: 100%;
-  background-color: #e5e5e5;
-}
-
-body {
-  min-height: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  font-family: "Pt Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #ffffff;
-}
+@import url("_fonts.css");
+@import url("_global.css");
+@import url("_modules/**/*.css");
 
 .advantage-text {
   text-align: center;
@@ -133,7 +120,20 @@ body {
 .subscribe-submit {
   width: 160px;
   height: 48px;
-  border-radius: 0 4px 4px 0 ;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #83b3d3;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.newsline-button {
+  width: 160px;
+  height: 48px;
+  border-radius: 0 4px 4px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -250,6 +250,13 @@ body {
   line-height: 20px;
   background-color: #756257;
   color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px;
+  display: block;
+  width: 130px;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .welcome {
@@ -408,7 +415,7 @@ body {
 
 .search-result {
   text-transform: uppercase;
-  margin-right: 192px;
+  margin-right: 160px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
@@ -417,6 +424,7 @@ body {
 }
 
 .select-control {
+  font-family: "Pt Sans", sans-serif;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   padding: 12px 40px 12px 20px;
@@ -489,17 +497,70 @@ body {
 }
 
 .show-more {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 17px 0;
+  width: 619px;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
   background-color: #83b3d3;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-bottom: 60px;
 }
 
 .pagination-title {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+}
+
+.pagination-container {
+  display: flex;
+  padding: 0 72px;
+  margin-bottom: 73px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-link {
+  display: block;
+  width: 55px;
+  border-radius: 4px;
+  background-color: #83B3D3;
+  text-decoration: none;
+  line-height: 25px;
+  text-align: center;
+  padding: 15px 0;
+  margin-right: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.pagination-link-first {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination {
+  margin-left: 51px;
+  padding: 12px 40px 12px 20px;
+  width: 160px;
+  font-family: "Pt Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .social-media {

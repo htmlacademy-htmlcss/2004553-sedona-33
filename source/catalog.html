@@ -254,72 +254,74 @@
 </section>
 
 <!-- Секция с пагинацией -->
-<ul class="pagination-list">
-  <li class="pagination-item">
-    <a class="pagination-link">
-      1
-    </a>
-  </li>
-  <li class="pagination-item">
-    <a href="#" class="pagination-link">
-      2
-    </a>
-  </li>
-  <li class="pagination-item">
-    <a href="#" class="pagination-link">
-      3
-    </a>
-  </li>
-  <li class="pagination-item">
-    <a href="#" class="pagination-link">
-      4
-    </a>
-  </li>
-  <li class="pagination-item">
-    <a href="#" class="pagination-link">
-      ...
-    </a>
-  </li>
-  <li class="pagination-item">
-    <a href="#" class="pagination-link">
-      10
-    </a>
-  </li>
-</ul>
-<label class="pagination-title">
-  Гостиниц на странице
-  <select name="number-page" class="pagination">
-    <option value="1">
-      1
-    </option>
-    <option value="2">
-      2
-    </option>
-    <option value="3">
-      3
-    </option>
-    <option value="4">
-      4
-    </option>
-    <option value="5">
-      5
-    </option>
-    <option value="6">
-      6
-    </option>
-    <option value="7">
-      7
-    </option>
-    <option value="8">
-      8
-    </option>
-    <option value="9">
-      9
-    </option>
-    <option value="10">
-      10
-    </option>
-  </select>
-</label>
+<div class="pagination-container">
+  <ul class="pagination-list">
+    <li class="pagination-item">
+      <a class="pagination-link pagination-link-first">
+        1
+      </a>
+    </li>
+    <li class="pagination-item">
+      <a href="#" class="pagination-link">
+        2
+      </a>
+    </li>
+    <li class="pagination-item">
+      <a href="#" class="pagination-link">
+        3
+      </a>
+    </li>
+    <li class="pagination-item">
+      <a href="#" class="pagination-link">
+        4
+      </a>
+    </li>
+    <li class="pagination-item">
+      <a href="#" class="pagination-link">
+        ...
+      </a>
+    </li>
+    <li class="pagination-item">
+      <a href="#" class="pagination-link">
+        10
+      </a>
+    </li>
+  </ul>
+  <label class="pagination-title">
+    Гостиниц на странице
+    <select name="number-page" class="pagination">
+      <option value="1">
+        1
+      </option>
+      <option value="2">
+        2
+      </option>
+      <option value="3">
+        3
+      </option>
+      <option value="4">
+        4
+      </option>
+      <option value="5">
+        5
+      </option>
+      <option value="6">
+        6
+      </option>
+      <option value="7">
+        7
+      </option>
+      <option value="8">
+        8
+      </option>
+      <option value="9">
+        9
+      </option>
+      <option value="10">
+        10
+      </option>
+    </select>
+  </label>
+</div>
 
 {% endblock %}
