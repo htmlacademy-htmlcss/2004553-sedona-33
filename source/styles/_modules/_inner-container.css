@@ -1,0 +1,15 @@
+.inner-container {
+  background-image: url("../images/jpg/bg-catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 35px 72px 83px;
+}
+
+.header-inner-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
