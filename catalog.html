@@ -134,25 +134,25 @@
           </fieldset>
           <fieldset class="hotel-filter-group">
             <legend class="hotel-filter-title">
-              Стоимость, в ₽.:
+              Стоимость, в ₽,:
             </legend>
             <ul class="number-list">
-              <li class="number-value">
+              <li class="number-span">
                 <label>
-                  <input type="number" min="0" max="11100" step="100">
-                  <span class="number-value min">от</span>
+                  <input type="number" min="0" max="11100" step="100" value="0">
+                  <span class="number-span min">от</span>
                 </label>
               </li>
-              <li class="number-value">
+              <li class="number-span">
                 <label>
-                  <input type="number" min="0" max="11100" step="100">
-                  <span class="number-value max">до</span>
+                  <input type="number" min="0" max="11100" step="100" value="9000">
+                  <span class="number-span max">до</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <p class="button-container">
-            <button class="subscribe-submit" type="submit">
+            <button class="submit-button catalog-filter-button" type="submit">
               Применить
             </button>
             <button class="reset" type="reset">
@@ -307,7 +307,7 @@
     <div class="pagination-container">
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-first">
+          <a class="pagination-link pagination-link-current">
             1
           </a>
         </li>
@@ -339,7 +339,7 @@
       </ul>
       <label class="pagination-title">
         Гостиниц на странице
-        <select name="number-page" class="pagination">
+        <select name="number-page" class="select-number-page">
           <option value="1">
             1
           </option>
@@ -388,7 +388,7 @@
           </span>
           <input type="email" name="email" placeholder="Ваш e-mail" class="input-email">
         </label>
-        <button class="subscribe-submit newsline-button" type="submit">
+        <button class="submit-button subscribe-button" type="submit">
           Подписаться
         </button>
       </form>
