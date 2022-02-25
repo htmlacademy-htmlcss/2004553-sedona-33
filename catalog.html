@@ -84,7 +84,7 @@
         <form class="hotel-filter" action="https://echo.htmlacademy.ru/courses" method="get">
           <fieldset class="hotel-filter-group">
             <legend class="hotel-filter-title">
-              Инфраструктура
+              Инфраструктура:
             </legend>
             <ul class="hotel-filter-list">
               <li class="hotel-filter-item">
@@ -132,44 +132,67 @@
               </li>
             </ul>
           </fieldset>
-          <button class="subscribe-submit" type="submit">
-            Применить
-          </button>
-          <button class="reset" type="reset">
-            Сбросить
-          </button>
+          <fieldset class="hotel-filter-group">
+            <legend class="hotel-filter-title">
+              Стоимость, в ₽,:
+            </legend>
+            <ul class="number-list">
+              <li class="number-span">
+                <label>
+                  <input type="number" min="0" max="11100" step="100" value="0">
+                  <span class="number-span min">от</span>
+                </label>
+              </li>
+              <li class="number-span">
+                <label>
+                  <input type="number" min="0" max="11100" step="100" value="9000">
+                  <span class="number-span max">до</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="button-container">
+            <button class="submit-button catalog-filter-button" type="submit">
+              Применить
+            </button>
+            <button class="reset" type="reset">
+              Сбросить
+            </button>
+          </p>
         </form>
       </section>
     </div>
-    <p class="search-result">
-      Найдено гостиниц: 38
-    </p>
-    <select class="select-control" aria-label="Сортировка">
-      <option value="cheap">
-        Сначала недорогие
-      </option>
-      <option value="popular">
-        Сначала популярные
-      </option>
-      <option value="expensive">
-        Сначала дорогие
-      </option>
-    </select>
-    <a href="#" class="button-card">
-      <span class="visually-hidden">
-        Показать карточки.
-      </span>
-    </a>
-    <a href="#" class="button-slide">
-      <span class="visually-hidden">
-        Показать слайд-шоу.
-      </span>
-    </a>
-    <a href="#" class="button-list">
-      <span class="visually-hidden">
-        Показать список.
-      </span>
-    </a>
+    <section class="section-filter">
+      <p class="search-result">
+        Найдено гостиниц: 38
+      </p>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">
+          Сначала недорогие
+        </option>
+        <option value="popular">
+          Сначала популярные
+        </option>
+        <option value="expensive">
+          Сначала дорогие
+        </option>
+      </select>
+      <a href="#" class="button-card">
+        <span class="visually-hidden">
+          Показать карточки.
+        </span>
+      </a>
+      <a href="#" class="button-slide">
+        <span class="visually-hidden">
+          Показать слайд-шоу.
+        </span>
+      </a>
+      <a href="#" class="button-list">
+        <span class="visually-hidden">
+          Показать список.
+        </span>
+      </a>
+    </section>
     <!-- Секция с карточками отелей -->
     <section class="hotel-card">
       <div class="hotel-card-item">
@@ -281,73 +304,75 @@
       </a>
     </section>
     <!-- Секция с пагинацией -->
-    <ul class="pagination-list">
-      <li class="pagination-item">
-        <a class="pagination-link">
-          1
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a href="#" class="pagination-link">
-          2
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a href="#" class="pagination-link">
-          3
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a href="#" class="pagination-link">
-          4
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a href="#" class="pagination-link">
-          ...
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a href="#" class="pagination-link">
-          10
-        </a>
-      </li>
-    </ul>
-    <label class="pagination-title">
-      Гостиниц на странице
-      <select name="number-page" class="pagination">
-        <option value="1">
-          1
-        </option>
-        <option value="2">
-          2
-        </option>
-        <option value="3">
-          3
-        </option>
-        <option value="4">
-          4
-        </option>
-        <option value="5">
-          5
-        </option>
-        <option value="6">
-          6
-        </option>
-        <option value="7">
-          7
-        </option>
-        <option value="8">
-          8
-        </option>
-        <option value="9">
-          9
-        </option>
-        <option value="10">
-          10
-        </option>
-      </select>
-    </label>
+    <div class="pagination-container">
+      <ul class="pagination-list">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-link-current">
+            1
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link">
+            2
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link">
+            3
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link">
+            4
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link">
+            ...
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a href="#" class="pagination-link">
+            10
+          </a>
+        </li>
+      </ul>
+      <label class="pagination-title">
+        Гостиниц на странице
+        <select name="number-page" class="select-number-page">
+          <option value="1">
+            1
+          </option>
+          <option value="2">
+            2
+          </option>
+          <option value="3">
+            3
+          </option>
+          <option value="4">
+            4
+          </option>
+          <option value="5">
+            5
+          </option>
+          <option value="6">
+            6
+          </option>
+          <option value="7">
+            7
+          </option>
+          <option value="8">
+            8
+          </option>
+          <option value="9">
+            9
+          </option>
+          <option value="10">
+            10
+          </option>
+        </select>
+      </label>
+    </div>
     <!-- Секция подписки на email рассылку -->
     <section class="subscribe">
       <h2 class="subscribe-title">
@@ -361,9 +386,9 @@
           <span class="visually-hidden">
             Введите почту чтобы подписаться.
           </span>
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <input type="email" name="email" placeholder="Ваш e-mail" class="input-email">
         </label>
-        <button class="subscribe-submit" type="submit">
+        <button class="submit-button subscribe-button" type="submit">
           Подписаться
         </button>
       </form>
@@ -398,9 +423,11 @@
     <a href="tel:+78128121212" class="tel-number">
       +7 (812) 812-12-12
     </a>
-    <a href="https://htmlacademy.ru/" class="footer-logo-link">
-      <img src="images/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип html academy" class="footer-logo">
-    </a>
+    <p class="logo-container">
+      <a href="https://htmlacademy.ru/" class="footer-logo-link">
+        <img src="images/svg/logo-htmlacademy.svg" width="115" height="34" alt="Логотип html academy" class="footer-logo">
+      </a>
+    </p>
   </footer>
 </body>
 </html>
