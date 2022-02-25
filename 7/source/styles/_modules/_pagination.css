@@ -21,29 +21,41 @@
 
 .pagination-link {
   display: block;
-  width: 55px;
+  min-width: 55px;
   border-radius: 4px;
   background-color: #83B3D3;
   text-decoration: none;
-  line-height: 25px;
+  line-height: 26px;
   text-align: center;
-  padding: 15px 0;
+  padding: 14px 16px 15px;
   margin-right: 8px;
   font-weight: 700;
   font-size: 20px;
   color: #FFFFFF;
+  box-sizing: border-box;
 }
 
-.pagination-link-first {
+.pagination-link-current {
   background-color: #F2F2F2;
   color: #000000;
+  display: block;
+  min-width: 55px;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 26px;
+  text-align: center;
+  padding: 14px 16px 15px;
+  margin-right: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  box-sizing: border-box;
 }
 
-.pagination {
+.select-number-page {
   margin-left: 51px;
   padding: 12px 40px 12px 20px;
   width: 160px;
-  font-family: "Pt Sans", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
 }
