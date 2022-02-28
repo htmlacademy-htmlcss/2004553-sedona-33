@@ -1,7 +1,9 @@
 .hotel-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+  grid-column: 1/-1;
 }
 
 .hotel-type {
@@ -14,6 +16,9 @@
   font-size: 16px;
   line-height: 20px;
   color: #333333;
+  text-transform: uppercase;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 .hotel-link-details {
@@ -22,6 +27,11 @@
   line-height: 20px;
   color: #ffffff;
   background-color: #756257;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .hotel-link-like {
@@ -30,6 +40,11 @@
   line-height: 20px;
   color: #ffffff;
   background-color: #83b3d3;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .show-more {
@@ -47,4 +62,24 @@
   margin: 0 auto;
   border-radius: 4px;
   margin-bottom: 60px;
+}
+
+.hotel-card {
+  padding: 0 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 18px 10px;
+  margin-bottom: 64px;
+}
+
+.hotel-card-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
+  margin: 0 auto;
+  grid-gap: 10px 16px;
+}
+
+.hotel-image {
+  grid-column: 1/-1;
 }
