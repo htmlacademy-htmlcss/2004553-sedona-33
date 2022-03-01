@@ -11,7 +11,7 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
       return require('posthtml-parser')(nunjucks.renderString(require('posthtml-render')(tree), {}));
     })()
   ]))
-  .pipe(require('gulp-w3c-html-validator')())
+  // .pipe(require('gulp-w3c-html-validator')())
   .pipe(require('gulp-html-beautify')())
   .pipe(dest('.'));
 
