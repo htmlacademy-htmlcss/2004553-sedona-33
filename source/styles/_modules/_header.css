@@ -1,6 +1,7 @@
 .header {
   display: flex;
   padding: 0 72px;
+  position: relative;
 }
 
 .header-nav {
@@ -11,7 +12,16 @@
 }
 
 .header-logo-link {
+  box-sizing: border-box;
+  display: block;
   margin-right: 30px;
+  padding: 0;
+
+}
+
+.header-logo {
+  display: block;
+  max-width: 100%;
 }
 
 .main-container {
@@ -37,12 +47,21 @@
 }
 
 .nav-link {
+  padding: 24px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: inherit;
   text-decoration: none;
   margin-right: 34px;
+}
+
+.nav-link:hover {
+  color: #756257;
+}
+
+.nav-link:active {
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .list-link-search {
@@ -79,3 +98,31 @@
   box-sizing: border-box;
 }
 
+.list-link-yes:hover {
+  background-color: #615048;
+}
+
+.list-link-yes:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;
+}
+
+.list-link-yes:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.like-number {
+  position: absolute;
+  top: 1px;
+  right: -14px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #7DB550;
+  padding: 0px 4px;
+  border-radius: 15px;
+}
+
+.link-current {
+  border-bottom: 2px solid #756257;
+}

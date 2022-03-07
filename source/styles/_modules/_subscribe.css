@@ -8,6 +8,7 @@
 
 .subscribe-title {
   margin: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -16,23 +17,41 @@
 
 .subscribe-subtitle {
   color: #ffffff;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-bottom: 46px;
   font-size: 22px;
   line-height: 26px;
 }
 
 .email {
   display: flex;
-  margin-top: 46px;
 }
 
 .input-email {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
   font-size: 18px;
   line-height: 26px;
   width: 600px;
-  padding: 11px;
+  padding: 17px;
   padding-left: 22px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 10px 0 0 10px;
   border: none;
+  outline-offset: -3px;
+
+}
+
+.input-email:hover {
+  background-color: #e6e6e6;
+}
+
+.input-email:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.input-email:invalid {
+  background-color: #FFFFFF;
+  ;
+  outline: 3px solid #FF5757;
 }

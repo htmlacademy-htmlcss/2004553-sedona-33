@@ -31,3 +31,16 @@
   border-radius: 10px;
   padding: 15px 160px;
 }
+
+.offer-link:hover {
+  background-color: #615048;
+  ;
+}
+
+.offer-link:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.offer-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}

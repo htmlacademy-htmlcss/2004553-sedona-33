@@ -5,6 +5,7 @@
 
 .social-media {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   width: 30%;
   margin: 0;
@@ -13,10 +14,26 @@
 }
 
 .tel-number {
+  padding: 20px 0;
+  text-decoration: none;
   margin: 0 auto;
   font-size: 40px;
   line-height: 46px;
   color: inherit;
+  outline-offset: 15px;
+}
+
+.tel-number:hover {
+  color: #756257;
+}
+
+.tel-number:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.tel-number:active {
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .logo-container {
@@ -24,5 +41,6 @@
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 30%;
 }

@@ -7,7 +7,8 @@ const render = require('posthtml-render');
 const chalk = require('chalk');
 const fetch = require('node-fetch');
 const { HtmlValidate } = require('html-validate');
-
+const gulpIf = require('gulp-if');
+let firstRun = true;
 const validateHtml = new HtmlValidate();
 const SeverityLevel = {
 	error: 2,
@@ -23,37 +24,39 @@ const Severity = {
     title: 'ERROR'
   }
 };
+const W3C_TIMEOUT = 1000;
 const isDev = process.env.NODE_ENV === 'development';
 const getPage = (tree) => tree.options.from.replace(/^.*source(\\+|\/+)(.*)\.html$/, '$2');
-
 const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
   .pipe(require('gulp-posthtml')([
     (() => (tree) => {
       nunjucks.configure('source', { autoescape: false });
-
       return parser(nunjucks.renderString(render(tree), {
         isDev,
         page: getPage(tree)
       }));
     })(),
     (() => async (tree) => {
+      let output = '';
       const html = render(tree);
       const page = `${getPage(tree)}.html`;
-      let output = '';
-
+      const controller = new AbortController();
+      setTimeout(() => {
+        controller.abort();
+      }, W3C_TIMEOUT);
       try {
         // Онлайн-валидатор HTML
         const validRes = await fetch('https://validator.nu/?out=json', {
           body: html,
           headers: { 'Content-Type': 'text/html' },
-          method: 'POST'
+          method: 'POST',
+          signal: controller.signal
         });
         const { messages = [] } = await validRes.json();
         messages.forEach(({ extract, firstColumn, lastLine, message, type }) => {
           const { logOutput, title } = Severity[SeverityLevel[type]];
           const prefix = `\n[${chalk.cyan('Validate HTML Online')}] ${page} (${lastLine}:${firstColumn + 1})`;
           const selectorMsg = ` ${chalk.cyan(extract)}`;
-
           output += `${prefix}${selectorMsg}:\n${logOutput.underline(title)}: ${logOutput(message)}\n`;
         });
       } catch (err) {
@@ -64,6 +67,7 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
             'html-validate:document'
           ],
           rules: {
+            'attribute-boolean-style': 'off',
             'no-trailing-whitespace': 'off',
             'input-missing-label': 'off',
             'require-sri': 'off'
@@ -75,7 +79,6 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
               const { logOutput, title } = Severity[severity];
               const prefix = `\n[${chalk.cyan('Validate HTML Offline')}] ${page} (${line}:${column})`;
               const selectorMsg = selector ? ` ${chalk.cyan(selector)}` : '';
-
               output += `${prefix}${selectorMsg}:\n${logOutput.underline(title)}: ${logOutput(message)}\n`;
             }
           });
@@ -83,13 +86,11 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
       } if (output) {
 				console.log(output);
 			}
-
       return tree;
     })()
   ]))
   .pipe(require('gulp-html-beautify')())
   .pipe(dest('.'));
-
 const buildCSS = () => src(['source/**/*.css', '!source/**/_*.css'])
   .pipe(require('gulp-postcss')([
     require('postcss-easy-import')(),
@@ -101,7 +102,6 @@ const buildCSS = () => src(['source/**/*.css', '!source/**/_*.css'])
     })
   ]))
   .pipe(dest('.'));
-
 const testBuildedCSS = () => src(['**/*.css', '!source/**/*.css', '!node_modules/**/*.css'])
   .pipe(require('gulp-postcss')([
     require('stylelint')({ fix: true }),
@@ -110,7 +110,6 @@ const testBuildedCSS = () => src(['**/*.css', '!source/**/*.css', '!node_modules
       throwError: false
     })
   ]));
-
 const optimizeImages = () => src('source/**/*.{svg,png,jpg}')
   .pipe(imagemin([
     imagemin.svgo({
@@ -156,14 +155,14 @@ const optimizeImages = () => src('source/**/*.{svg,png,jpg}')
     imagemin.mozjpeg({ quality: 75, progressive: true }),
     imagemin.optipng()
   ]))
+  .pipe(gulpIf(firstRun, dest('source')))
   .pipe(dest('.'));
-
 const reload = (done) => {
   server.reload();
   done();
 };
-
 const startServer = () => {
+  firstRun = false;
   server.init({
     cors: true,
     server: '.',
@@ -171,9 +170,9 @@ const startServer = () => {
   });
 
   watch('source/**/*.html', series(buildHTML, reload));
+  watch('source/**/*.{html,svg}', series(buildHTML, reload));
   watch('source/**/*.css', series(buildCSS, testBuildedCSS, reload));
   watch('source/**/*.{svg,png,jpg}', series(optimizeImages, reload));
 };
-
 exports.test = testBuildedCSS;
 exports.default = series(parallel(buildHTML, buildCSS, optimizeImages), testBuildedCSS, startServer);
