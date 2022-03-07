@@ -1,0 +1,129 @@
+.advantage-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.advantage-title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantage-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantage-additions-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantage-additions-title-home::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/svg/icon-home.svg);
+  background-size: 75px 75px;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  top: 89px;
+  right: 162px;
+}
+
+.advantage-additions-title-food::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/svg/icon-burger.svg);
+  background-size: 75px 75px;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  top: 89px;
+  right: 162px;
+}
+
+.advantage-additions-title-souvenirs::before {
+  position: absolute;
+  content: "";
+  background-image: url(..//../images/svg/icon-gift.svg);
+  background-size: 75px 75px;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  top: 89px;
+  right: 162px;
+}
+
+
+.advantage-card>.advantage-description {
+  color: inherit;
+}
+
+.advantage-card {
+  box-sizing: border-box;
+  background-color: rgba(131, 179, 211, 1);
+  color: #ffffff;
+  width: 33.33333%;
+  text-align: center;
+  padding: 97px 90px 87px;
+}
+
+.advantage-additions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.advantage-additions-item {
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 33.33333%;
+  padding: 184px 75px 87px;
+  text-align: center;
+}
+
+.advantage-additions-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.advantage-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-list-item {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 33.33333%;
+  padding: 97px 75px 87px;
+}
+
+.advantage-list-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-list-group {
+  display: flex;
+  flex-wrap: wrap;
+}
