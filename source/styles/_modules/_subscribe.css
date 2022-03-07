@@ -38,7 +38,6 @@
   border-radius: 10px 0 0 10px;
   border: none;
   outline-offset: -3px;
-
 }
 
 .input-email:hover {
@@ -47,11 +46,10 @@
 
 .input-email:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .input-email:invalid {
-  background-color: #FFFFFF;
-  ;
-  outline: 3px solid #FF5757;
+  background-color: #ffffff;
+  outline: 3px solid #ff5757;
 }

@@ -9,7 +9,7 @@
 }
 
 .footer-logo-link:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 
@@ -25,7 +25,7 @@
   position: absolute;
   top: 18px;
   left: 20px;
-  mask-image: url(../images/svg/logo-htmlacademy.svg);
+  mask-image: url("../images/svg/logo-htmlacademy.svg");
   background-color: #000000;
 }
 
