@@ -27,6 +27,7 @@
   left: 20px;
   mask-image: url("../images/svg/logo-htmlacademy.svg");
   background-color: #000000;
+  pointer-events: none;
 }
 
 .footer-logo-link:hover::after {
