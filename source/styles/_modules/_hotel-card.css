@@ -21,49 +21,6 @@
   margin-bottom: 0;
 }
 
-.hotel-link-details {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756257;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.hotel-link-like {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #83b3d3;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.show-more {
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  padding: 17px 0;
-  width: 619px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  color: #ffffff;
-  background-color: #83b3d3;
-  margin: 0 auto;
-  border-radius: 4px;
-  margin-bottom: 60px;
-}
-
 .hotel-card {
   padding: 0 72px;
   display: grid;
