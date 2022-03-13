@@ -24,25 +24,48 @@
   color: #333333;
 }
 
-.button-slide {
+.select-control:hover {
+  outline: 2px solid #83b3d3;
+}
+
+.select-control:focus {
+  outline: 2px solid #83b3d3;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.order-card {
+  display: flex;
   width: 48px;
   height: 48px;
-  border: 2px solid #e6e6e6;
+  outline: 2px solid #e6e6e6;
   border-radius: 4px;
   margin-right: 8px;
 }
 
-.button-card {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #000000;
-  border-radius: 4px;
-  margin-right: 8px;
+.order-card-list {
+  outline: 2px solid #000000;
 }
 
-.button-list {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
+.order-card::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  margin: auto;
+}
+
+.order-card-list::after {
+  mask-image: url("../images/svg/icon-title.svg");
+}
+
+.order-card-slide::after {
+  mask-image: url("../images/svg/icon-slide-show.svg");
+}
+
+.order-card-tile::after {
+  mask-image: url("../images/svg/icon-list.svg");
 }

@@ -11,6 +11,20 @@
   margin-bottom: 20px;
 }
 
+.catalog-filter-button:hover {
+  background-color: #68a2ca;
+}
+
+.catalog-filter-button:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #ffffff;
+}
+
+.catalog-filter-button:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .subscribe-button {
   width: 200px;
   border-radius: 0 10px 10px 0;
