@@ -14,3 +14,12 @@
   border-radius: 4px;
   margin-bottom: 60px;
 }
+
+.show-more:hover {
+  background-color: #68a2ca;
+}
+
+.show-more:active {
+  background-color: #68a2ca;
+  color: rgb(255, 255, 255, 0.3);
+}

@@ -1,14 +1,16 @@
 .catalog-filter-button {
-  width: 160px;
-  height: 48px;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  padding: 14px 29px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
-  margin-bottom: 20px;
 }
 
 .catalog-filter-button:hover {

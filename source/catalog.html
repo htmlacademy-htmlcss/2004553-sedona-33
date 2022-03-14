@@ -38,20 +38,20 @@
         <ul class="hotel-filter-list">
           <li class="hotel-filter-item">
             <label class="control">
-              <input type="checkbox" class="control-input" name="pool" checked>
-              Бассейн
+              <input type="checkbox" class="visually-hidden control-input" name="pool" checked>
+              <span class="control-span">Бассейн</span>
             </label>
           </li>
           <li class="hotel-filter-item">
             <label class="control">
-              <input type="checkbox" class="control-input" name="parking" checked>
-              Парковка
+              <input type="checkbox" class="visually-hidden control-input" name="parking" checked>
+              <span class="control-span">Парковка</span>
             </label>
           </li>
           <li class="hotel-filter-item">
             <label class="control">
-              <input type="checkbox" class="control-input" name="wi-fi">
-              Wi-Fi
+              <input type="checkbox" class="visually-hidden control-input" name="wi-fi">
+              <span class="control-span"> Wi-Fi</span>
             </label>
           </li>
         </ul>
@@ -62,43 +62,41 @@
         </legend>
         <ul class="hotel-filter-list">
           <li class="hotel-filter-item">
-            <label class="control">
-              <input type="radio" class="control-input" name="house-filter" value="hotel" checked>
-              Гостиница
+            <label class="control control-radio">
+              <input type="radio" class="visually-hidden control-input" name="house-filter" value="hotel" checked>
+              <span class="control-span">Гостиница</span>
             </label>
           </li>
           <li class="hotel-filter-item">
-            <label class="control">
-              <input type="radio" class="control-input" name="house-filter" value="motel">
-              Мотель
+            <label class="control control-radio">
+              <input type="radio" class="visually-hidden control-input" name="house-filter" value="motel">
+              <span class="control-span">Мотель</span>
             </label>
           </li>
           <li class="hotel-filter-item">
-            <label class="control">
-              <input type="radio" class="control-input" name="house-filter" value="apartments">
-              Аппартаменты
+            <label class="control control-radio">
+              <input type="radio" class="visually-hidden control-input" name="house-filter" value="apartments">
+              <span class="control-span">Апартаменты</span>
             </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="hotel-filter-group">
         <legend class="hotel-filter-title">
-          Стоимость, в ₽,:
+          Стоимость, ₽:
         </legend>
-        <ul class="number-list">
-          <li class="number-span">
-            <label>
-              <input type="number"  name="min-price" min="0" max="11100" step="100" value="0">
-              <span class="number-span min">от</span>
+        <div class="range">
+          <div class="range-price">
+            <label class="range-label range-label-left">
+              <input type="number" class="range-level" name="min-price" min="0" max="11100" step="100" value="0">
+              <span class="number-span">от</span>
             </label>
-          </li>
-          <li class="number-span">
-            <label>
-              <input type="number" name="max-price" min="0" max="11100" step="100" value="9000">
-              <span class="number-span max">до</span>
+            <label class="range-label range-label-right">
+              <input type="number" class="range-level" name="max-price" min="0" max="11100" step="100" value="9000">
+              <span class="number-span">до</span>
             </label>
-          </li>
-        </ul>
+          </div>
+        </div>
       </fieldset>
       <p class="button-container">
         <button class="submit-button catalog-filter-button" type="submit">

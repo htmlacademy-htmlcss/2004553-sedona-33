@@ -33,6 +33,7 @@
   font-size: 20px;
   color: #ffffff;
   box-sizing: border-box;
+  outline-offset: -3px;
 }
 
 .pagination-link-current {
@@ -50,6 +51,21 @@
   font-size: 20px;
   box-sizing: border-box;
 }
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+}
+
+.pagination-link:active {
+  background-color: #68a2ca;
+  color: rgb(255, 255, 255, 0.3);
+}
+
 
 .select-number-page {
   margin-left: 51px;

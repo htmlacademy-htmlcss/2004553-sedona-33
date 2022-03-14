@@ -1,0 +1,38 @@
+.range-price {
+  display: flex;
+}
+
+.range-label {
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 13px 15px;
+}
+
+.range-level {
+  appearance: textfield;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 95px;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+.range-level::-webkit-outer-spin-button,
+.range-level::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.range-label:first-child {
+  border-right: solid 1px #ffffff;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-label:last-child {
+  border-left: solid 1px #ffffff;
+  border-radius: 0 4px 4px 0;
+}
+
