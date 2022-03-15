@@ -1,3 +1,9 @@
+.range {
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
+
 .range-price {
   display: flex;
 }
@@ -7,7 +13,7 @@
   display: flex;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  padding: 13px 15px;
+  padding: 11px 14px;
 }
 
 .range-level {
