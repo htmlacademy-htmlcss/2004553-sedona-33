@@ -1,11 +1,10 @@
 .tel-number {
-  padding: 20px 0;
+  padding: 15px 15px;
   text-decoration: none;
   margin: 0 auto;
   font-size: 40px;
   line-height: 46px;
   color: inherit;
-  outline-offset: 15px;
   border-radius: 10px;
 }
 

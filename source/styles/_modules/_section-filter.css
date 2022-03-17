@@ -79,3 +79,13 @@
 .order-card-tile::after {
   mask-image: url("../images/svg/icon-list.svg");
 }
+
+.order-card:hover {
+  outline: 2px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.order-card:focus {
+  outline: 2px solid #83b3d3;
+  border-radius: 4px;
+}

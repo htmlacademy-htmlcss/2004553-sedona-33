@@ -80,3 +80,23 @@
   margin-bottom: 30px;
   padding: 0 72px;
 }
+
+.button-link-details:hover {
+  background-color: #615048;
+}
+
+.button-link-details:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.button-link:active {
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.button-link-like:hover {
+  background-color: #68a2ca;
+}
+
+.button-link-like:focus {
+  outline: 3px solid #756257;
+}

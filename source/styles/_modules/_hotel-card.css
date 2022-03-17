@@ -45,3 +45,32 @@
 .hotel-image {
   grid-column: 1/-1;
 }
+
+.hotel-image:hover {
+  opacity: 0.6;
+}
+
+.hotel-image:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.hotel-image:active {
+  opacity: 0.3;
+}
+
+.four-star {
+  position: relative;
+}
+
+.four-star::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 17px;
+  mask-image: url("../images/svg/icon-star.svg");
+  background-color: #83b3d3;
+  top: 0;
+  left: 0;
+  right: 0;
+}

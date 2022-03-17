@@ -1,8 +1,22 @@
 .pagination-title {
+  position: relative;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
+
+.pagination-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 7px;
+  mask-image: url("../images/svg/arrow-down-icon.svg");
+  background-color: #000000;
+}
+
 
 .pagination-container {
   display: flex;
@@ -69,9 +83,13 @@
 
 .select-number-page {
   margin-left: 51px;
-  padding: 12px 40px 12px 20px;
+  padding: 13px 12px 15px 16px;
   width: 160px;
   font-family: inherit;
   font-size: 18px;
   line-height: 23px;
+  appearance: none;
+  outline: 2px solid #e6e6e6;
+  border-radius: 4px;
+  border: none;
 }

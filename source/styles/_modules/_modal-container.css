@@ -30,7 +30,7 @@
   height: 50px;
   background-color: #000000;
   border: none;
-  mask-image: url("..//..//images/svg/icon-close.svg");
+  mask-image: url("../images/svg/icon-close.svg");
   mask-repeat: no-repeat;
   mask-position: center;
   cursor: pointer;
