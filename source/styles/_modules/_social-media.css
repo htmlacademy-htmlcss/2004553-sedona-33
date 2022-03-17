@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
+  top: -2px;
+  left: -11px;
 }
 
 .social-media-link {

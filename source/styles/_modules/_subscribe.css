@@ -1,5 +1,5 @@
 .subscribe {
-  padding: 94px 200px;
+  padding: 70px 200px 93px;
   background-image: url("../images/jpg/bg-email.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,8 +7,8 @@
 }
 
 .subscribe-title {
-  margin: 0;
-  margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;

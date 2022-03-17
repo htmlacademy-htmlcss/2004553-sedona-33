@@ -1,26 +1,24 @@
 .offer {
-  padding: 93px 240px;
+  padding: 91px 240px 105px;
   text-align: center;
 }
 
 .offer-title {
-  margin: 0;
+  text-transform: uppercase;
+  margin: 0 0 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
 .offer-subtitle {
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin: 0 0 69px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
 .offer-link {
-  display: inline-block;
-  margin-top: 56px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -29,7 +27,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 10px;
-  padding: 15px 160px;
+  padding: 17px 150px;
 }
 
 .offer-link:hover {

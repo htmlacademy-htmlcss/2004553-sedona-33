@@ -95,6 +95,7 @@
 }
 
 .list-link-yes {
+  text-transform: uppercase;
   margin-left: 32px;
   min-width: 160px;
   font-family: "Pt Sans", sans-serif;
@@ -109,6 +110,8 @@
   width: 130px;
   text-align: center;
   border-radius: 4px;
+  position: relative;
+  left: 2px;
   box-sizing: border-box;
 }
 

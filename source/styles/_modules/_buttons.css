@@ -28,6 +28,7 @@
 }
 
 .subscribe-button {
+  text-transform: uppercase;
   width: 200px;
   border-radius: 0 10px 10px 0;
   font-weight: 700;
@@ -57,7 +58,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 15px;
+  padding: 9px 15px;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -71,4 +72,11 @@
 
 .button-link-like {
   background-color: #83b3d3;
+}
+
+.button-wrapper {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+  padding: 0 72px;
 }
