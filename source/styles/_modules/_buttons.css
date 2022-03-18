@@ -55,10 +55,11 @@
 }
 
 .button-link {
+  color: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 15px;
+  padding: 9px 15px 7px;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;

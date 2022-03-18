@@ -279,10 +279,11 @@ body {
 }
 
 .button-link {
+  color: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 15px;
+  padding: 9px 15px 7px;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -659,6 +660,13 @@ body {
   margin-bottom: 36px;
 }
 
+.hotel-card-link {
+  display: flex;
+  grid-column: 1/-1;
+  flex-direction: column;
+  text-decoration: none;
+}
+
 .hotel-card-item {
   display: grid;
   grid-template-columns: 133px 1fr;
@@ -683,22 +691,29 @@ body {
   opacity: 0.3;
 }
 
-.four-star {
-  position: relative;
-}
-
-.four-star::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 17px;
+.rate-star {
   -webkit-mask-image: url("../images/svg/icon-star.svg");
           mask-image: url("../images/svg/icon-star.svg");
   background-color: #83b3d3;
-  top: 0;
-  left: 0;
-  right: 0;
+  -webkit-mask-size: 24px 20px;
+          mask-size: 24px 20px;
+  -webkit-mask-position: -2px 0;
+          mask-position: -2px 0;
+  width: 20px;
+  height: 20px;
+  margin: 8px 0 0;
+}
+
+.rate-star-4 {
+  width: 94px;
+}
+
+.rate-star-3 {
+  width: 70px;
+}
+
+.rate-star-2 {
+  width: 46px;
 }
 
 .hotel-filter-item:not(:last-child) {
