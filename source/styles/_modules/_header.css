@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  padding: 0 72px;
+  padding: 0 70px;
   position: relative;
   margin-bottom: -6px;
 }
@@ -96,22 +96,17 @@
 
 .list-link-yes {
   text-transform: uppercase;
-  margin-left: 32px;
   min-width: 160px;
-  font-family: "Pt Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: #756257;
   color: #ffffff;
   text-decoration: none;
-  padding: 9px 15px;
+  padding: 9px 15px 8px;
   display: block;
-  width: 130px;
   text-align: center;
   border-radius: 4px;
-  position: relative;
-  left: 2px;
   box-sizing: border-box;
 }
 
