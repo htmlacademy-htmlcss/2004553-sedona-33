@@ -15,7 +15,7 @@
 
 .subscribe-subtitle {
   color: #333333;
-  margin: 0 0 46px;
+  margin: 0 0 45px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -31,8 +31,7 @@
   font-size: 18px;
   line-height: 26px;
   width: 600px;
-  padding: 17px;
-  padding-left: 22px;
+  padding: 19px 22px 15px;
   border-radius: 10px 0 0 10px;
   border: none;
   outline-offset: -3px;
@@ -53,7 +52,7 @@
 }
 
 .subscribe-alter {
-  padding: 79px 72px 93px;
+  padding: 79px 72px 94px;
   background-image: url("../images/jpg/bg-email.jpg");
 }
 

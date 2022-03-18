@@ -72,24 +72,33 @@ body {
 .advantage-additions-title::before {
   position: absolute;
   content: "";
-  background-size: 75px 75px;
-  width: 75px;
-  height: 75px;
-  background-repeat: no-repeat;
-  top: 89px;
-  right: 162px;
 }
 
 .advantage-additions-title-home::before {
   background-image: url("../images/svg/icon-home.svg");
+  background-size: 74px 72px;
+  width: 74px;
+  height: 72px;
+  top: 89px;
+  right: 163px;
 }
 
 .advantage-additions-title-food::before {
   background-image: url("../images/svg/icon-burger.svg");
+  background-size: 74px 70px;
+  width: 74px;
+  height: 70px;
+  top: 91px;
+  right: 163px;
 }
 
 .advantage-additions-title-souvenirs::before {
   background-image: url("../images/svg/icon-gift.svg");
+  background-size: 64px 76px;
+  width: 64px;
+  height: 76px;
+  top: 85px;
+  right: 168px;
 }
 
 .advantage-card > .advantage-description {
@@ -102,7 +111,7 @@ body {
   color: #ffffff;
   width: 33.333333%;
   text-align: center;
-  padding: 100px 90px 87px;
+  padding: 100px 90px 86px;
 }
 
 .advantage-additions {
@@ -142,7 +151,7 @@ body {
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
   width: 33.333333%;
-  padding: 97px 75px 78px;
+  padding: 97px 75px 80px;
 }
 
 .advantage-list-item:nth-child(2n) {
@@ -263,7 +272,7 @@ body {
   border: none;
   cursor: pointer;
   outline-offset: -2px;
-  padding: 20px;
+  padding: 20px 14px 17px;
 }
 
 .subscribe-button:hover {
@@ -425,13 +434,13 @@ body {
 
 .footer-logo-link {
   display: block;
-  padding: 16px;
   position: relative;
 }
 
 .footer-logo-link:focus {
   outline: 3px solid #83b3d3;
-  border-radius: 10px;
+  border-radius: 4px;
+  outline-offset: 10px;
 }
 
 .footer-logo {
@@ -444,8 +453,7 @@ body {
   display: block;
   content: "";
   position: absolute;
-  top: 18px;
-  left: 20px;
+  top: 1px;
   -webkit-mask-image: url("../images/svg/logo-htmlacademy.svg");
           mask-image: url("../images/svg/logo-htmlacademy.svg");
   background-color: #000000;
@@ -462,7 +470,7 @@ body {
 
 .icon-header {
   position: absolute;
-  top: 18px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -489,7 +497,7 @@ body {
 .header-nav {
   display: flex;
   width: 50%;
-  padding: 20px 16px;
+  padding: 20px 19px;
   margin-right: 12px;
 }
 
@@ -522,9 +530,10 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: flex-end;
+  align-items: center;
   width: 30%;
   margin: 0;
-  padding: 14px 0;
+  padding: 0 0 6px;
 }
 
 .header-list-icon {
@@ -559,7 +568,7 @@ body {
   position: relative;
   min-height: 18px;
   min-width: 18px;
-  margin-left: 12px;
+  margin-right: 24px;
 }
 
 .list-link-like {
@@ -567,7 +576,7 @@ body {
   position: relative;
   min-height: 18px;
   min-width: 18px;
-  margin-left: 24px;
+  margin-right: 33px;
   color: #ffffff;
 }
 
@@ -606,8 +615,8 @@ body {
 
 .like-number {
   position: absolute;
-  top: 1px;
-  right: -14px;
+  top: -9px;
+  right: -15px;
   text-decoration: none;
   font-size: 10px;
   background-color: #7db550;
@@ -874,7 +883,7 @@ body {
 }
 
 .offer {
-  padding: 91px 240px 105px;
+  padding: 93px 240px 102px;
   text-align: center;
 }
 
@@ -902,7 +911,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 10px;
-  padding: 17px 150px;
+  padding: 20px 150px 14px;
 }
 
 .offer-link:hover {
@@ -1409,7 +1418,7 @@ body {
 
 .subscribe-subtitle {
   color: #333333;
-  margin: 0 0 46px;
+  margin: 0 0 45px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -1425,8 +1434,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   width: 600px;
-  padding: 17px;
-  padding-left: 22px;
+  padding: 19px 22px 15px;
   border-radius: 10px 0 0 10px;
   border: none;
   outline-offset: -3px;
@@ -1447,7 +1455,7 @@ body {
 }
 
 .subscribe-alter {
-  padding: 79px 72px 93px;
+  padding: 79px 72px 94px;
   background-image: url("../images/jpg/bg-email.jpg");
 }
 
@@ -1494,7 +1502,7 @@ body {
 }
 
 .welcome {
-  padding-top: 548px;
+  padding-top: 549px;
   background-image: url("../images/jpg/image-main.jpg");
   background-repeat: no-repeat;
   /* background-size: 100%; */

@@ -4,13 +4,13 @@
 
 .footer-logo-link {
   display: block;
-  padding: 16px;
   position: relative;
 }
 
 .footer-logo-link:focus {
   outline: 3px solid #83b3d3;
-  border-radius: 10px;
+  border-radius: 4px;
+  outline-offset: 10px;
 }
 
 .footer-logo {
@@ -23,8 +23,7 @@
   display: block;
   content: "";
   position: absolute;
-  top: 18px;
-  left: 20px;
+  top: 1px;
   mask-image: url("../images/svg/logo-htmlacademy.svg");
   background-color: #000000;
   pointer-events: none;

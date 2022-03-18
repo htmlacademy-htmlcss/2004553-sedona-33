@@ -39,7 +39,7 @@
   border: none;
   cursor: pointer;
   outline-offset: -2px;
-  padding: 20px;
+  padding: 20px 14px 17px;
 }
 
 .subscribe-button:hover {
