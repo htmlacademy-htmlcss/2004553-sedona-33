@@ -35,10 +35,9 @@
 }
 
 .hotel-card-link {
-  display: flex;
   grid-column: 1/-1;
-  flex-direction: column;
   text-decoration: none;
+  color: inherit;
 }
 
 .hotel-card-item {
@@ -51,6 +50,7 @@
 
 .hotel-image {
   grid-column: 1/-1;
+  margin-bottom: 12px;
 }
 
 .hotel-image:hover {

@@ -279,11 +279,10 @@ body {
 }
 
 .button-link {
-  color: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 15px 7px;
+  padding: 9px 15px 8px;
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -297,6 +296,7 @@ body {
 
 .button-link-like {
   background-color: #83b3d3;
+  padding: 9px 20px 8px;
 }
 
 .button-wrapper {
@@ -661,10 +661,9 @@ body {
 }
 
 .hotel-card-link {
-  display: flex;
   grid-column: 1/-1;
-  flex-direction: column;
   text-decoration: none;
+  color: inherit;
 }
 
 .hotel-card-item {
@@ -677,6 +676,7 @@ body {
 
 .hotel-image {
   grid-column: 1/-1;
+  margin-bottom: 12px;
 }
 
 .hotel-image:hover {
