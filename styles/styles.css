@@ -233,14 +233,15 @@ body {
 
 .catalog-filter-button {
   display: block;
-  margin-top: 44px;
+  margin-top: 42px;
   margin-bottom: 19px;
   text-transform: uppercase;
-  padding: 14px 29px;
+  padding: 13px 34px 14px 35px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  font-family: inherit;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
@@ -265,14 +266,15 @@ body {
   width: 200px;
   border-radius: 0 10px 10px 0;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
   cursor: pointer;
   outline-offset: -2px;
-  padding: 20px 14px 17px;
+  padding: 16px 14px 17px;
 }
 
 .subscribe-button:hover {
@@ -297,6 +299,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  outline-offset: -1px;
 }
 
 .button-link-details {
@@ -308,11 +311,29 @@ body {
   padding: 9px 20px 8px;
 }
 
+.button-link-like-choice {
+  background-color: #7db54f;
+}
+
 .button-wrapper {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 30px;
   padding: 0 72px;
+}
+
+.button-link-like-choice:hover {
+  background: #6c9e42;
+}
+
+.button-link-like-choice:focus {
+  background: #6c9e42;
+  outline: 3px solid #756257;
+}
+
+.button-link-like-choice:active {
+  background: #6c9e42;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .button-link-details:hover {
@@ -491,7 +512,7 @@ body {
   display: flex;
   padding: 0 70px;
   position: relative;
-  margin-bottom: -6px;
+  margin-bottom: -5px;
 }
 
 .header-nav {
@@ -648,9 +669,8 @@ body {
   color: #333333;
   text-transform: uppercase;
   margin-top: -1px;
-  margin-bottom: 6px;
   margin-left: -19px;
-  padding: 8px 15px;
+  padding: 10px 14px 9px 14px;
   background-color: #f2f2f2;
   border-radius: 4px;
   text-align: center;
@@ -660,8 +680,8 @@ body {
   padding: 0 72px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  grid-gap: 21px 18px;
-  margin-bottom: 36px;
+  grid-gap: 5px 18px;
+  margin-bottom: 23px;
 }
 
 .hotel-card-link {
@@ -673,9 +693,9 @@ body {
 .hotel-card-item {
   display: grid;
   grid-template-columns: 133px 1fr;
-  padding: 12px 20px;
+  padding: 14px 20px;
   margin: 0 auto;
-  grid-gap: 16px 25px;
+  grid-gap: 16px 26px;
 }
 
 .hotel-image {
@@ -725,7 +745,7 @@ body {
 }
 
 .hotel-selection {
-  margin-top: 45px;
+  margin-top: 46px;
 }
 
 .hotel-filter {
@@ -740,15 +760,15 @@ body {
 }
 
 .hotel-filter-group:nth-child(2) {
-  margin-right: 160px;
+  margin-right: 161px;
 }
 
 .hotel-filter-group:last-of-type {
-  margin-right: 77px;
+  margin-right: 74px;
 }
 
 .hotel-filter-title {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
@@ -772,6 +792,7 @@ body {
 .reset {
   margin: 0;
   padding: 0;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -797,11 +818,11 @@ body {
   background-image: url("../images/jpg/bg-catalog.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 35px 72px 64px;
+  padding: 35px 72px 66px;
 }
 
 .header-inner-title {
-  margin: 0;
+  margin: 0 0 0 4px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -949,13 +970,13 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 17px;
+  right: 21px;
   width: 12px;
   height: 7px;
   -webkit-mask-image: url("../images/svg/arrow-down-icon.svg");
           mask-image: url("../images/svg/arrow-down-icon.svg");
-  background-color: #000000;
+  background-color: #e6e6e6;
 }
 
 .pagination-container {
@@ -1022,8 +1043,8 @@ body {
 
 .select-number-page {
   margin-left: 51px;
-  padding: 13px 12px 15px 16px;
-  width: 160px;
+  padding: 11px 16px 10px;
+  width: 158px;
   font-family: inherit;
   font-size: 18px;
   line-height: 23px;
@@ -1033,11 +1054,17 @@ body {
   outline: 2px solid #e6e6e6;
   border-radius: 4px;
   border: none;
+  margin-top: -2px;
+  color: #333333;
+}
+
+.select-number-page:focus {
+  outline: 2px solid #83b3d3;
 }
 
 .range-target {
   width: 93%;
-  margin-top: 24px;
+  margin-top: 20px;
   padding-right: 20px;
 }
 
@@ -1105,14 +1132,9 @@ body {
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
-.range {
-  position: relative;
-  top: 5px;
-  left: 2px;
-}
-
 .range-price {
   display: flex;
+  margin-top: 4px;
 }
 
 .range-label {
@@ -1120,7 +1142,7 @@ body {
   display: flex;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  padding: 11px 14px;
+  padding: 11px 14px 9px;
 }
 
 .range-level {
@@ -1134,6 +1156,17 @@ body {
   font: inherit;
   color: inherit;
   outline: none;
+  line-height: 24px;
+}
+
+.range-level-left {
+  margin-left: -1px;
+  padding-left: 3px;
+}
+
+.range-level-right {
+  margin: 0 -2px 0 0;
+  padding: 0;
 }
 
 .range-level::-webkit-outer-spin-button,
@@ -1188,7 +1221,7 @@ body {
 
 .section-filter {
   display: flex;
-  padding: 45px 72px;
+  padding: 44px 72px;
   margin-bottom: 15px;
 }
 
@@ -1204,10 +1237,10 @@ body {
 }
 
 .select-control {
-  font-family: "Pt Sans", sans-serif;
+  font-family: inherit;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
-  padding: 8px 24px 14px 16px;
+  padding: 8px 22px 13px 18px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -1309,14 +1342,14 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  padding: 17px 0;
-  width: 619px;
+  padding: 18px 1px 17px;
+  width: 618px;
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
   background-color: #83b3d3;
-  margin: 30px auto 30px;
+  margin: 29px auto 29px;
   border-radius: 4px;
 }
 
@@ -1402,7 +1435,7 @@ body {
 }
 
 .subscribe {
-  padding: 0 72px 142px;
+  padding: 2px 72px 143px;
   text-align: center;
   margin: 0 auto;
 }
@@ -1431,6 +1464,7 @@ body {
 .input-email {
   box-sizing: border-box;
   background-color: #f2f2f2;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   width: 600px;
@@ -1502,7 +1536,7 @@ body {
 }
 
 .welcome {
-  padding-top: 549px;
+  padding-top: 548px;
   background-image: url("../images/jpg/image-main.jpg");
   background-repeat: no-repeat;
   /* background-size: 100%; */

@@ -1,13 +1,14 @@
 .catalog-filter-button {
   display: block;
-  margin-top: 44px;
+  margin-top: 42px;
   margin-bottom: 19px;
   text-transform: uppercase;
-  padding: 14px 29px;
+  padding: 13px 34px 14px 35px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  font-family: inherit;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
@@ -32,14 +33,15 @@
   width: 200px;
   border-radius: 0 10px 10px 0;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
   cursor: pointer;
   outline-offset: -2px;
-  padding: 20px 14px 17px;
+  padding: 16px 14px 17px;
 }
 
 .subscribe-button:hover {
@@ -64,6 +66,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  outline-offset: -1px;
 }
 
 .button-link-details {
@@ -75,11 +78,29 @@
   padding: 9px 20px 8px;
 }
 
+.button-link-like-choice {
+  background-color: #7db54f;
+}
+
 .button-wrapper {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 30px;
   padding: 0 72px;
+}
+
+.button-link-like-choice:hover {
+  background: #6c9e42;
+}
+
+.button-link-like-choice:focus {
+  background: #6c9e42;
+  outline: 3px solid #756257;
+}
+
+.button-link-like-choice:active {
+  background: #6c9e42;
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .button-link-details:hover {

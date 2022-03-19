@@ -1,5 +1,5 @@
 .hotel-selection {
-  margin-top: 45px;
+  margin-top: 46px;
 }
 
 .hotel-filter {
@@ -14,15 +14,15 @@
 }
 
 .hotel-filter-group:nth-child(2) {
-  margin-right: 160px;
+  margin-right: 161px;
 }
 
 .hotel-filter-group:last-of-type {
-  margin-right: 77px;
+  margin-right: 74px;
 }
 
 .hotel-filter-title {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
@@ -46,6 +46,7 @@
 .reset {
   margin: 0;
   padding: 0;
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;

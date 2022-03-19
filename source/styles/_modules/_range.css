@@ -1,11 +1,6 @@
-.range {
-  position: relative;
-  top: 5px;
-  left: 2px;
-}
-
 .range-price {
   display: flex;
+  margin-top: 4px;
 }
 
 .range-label {
@@ -13,7 +8,7 @@
   display: flex;
   border: 2px solid #ffffff;
   border-radius: 4px;
-  padding: 11px 14px;
+  padding: 11px 14px 9px;
 }
 
 .range-level {
@@ -25,6 +20,17 @@
   font: inherit;
   color: inherit;
   outline: none;
+  line-height: 24px;
+}
+
+.range-level-left {
+  margin-left: -1px;
+  padding-left: 3px;
+}
+
+.range-level-right {
+  margin: 0 -2px 0 0;
+  padding: 0;
 }
 
 .range-level::-webkit-outer-spin-button,

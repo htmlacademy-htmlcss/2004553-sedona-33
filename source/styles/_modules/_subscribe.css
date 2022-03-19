@@ -1,5 +1,5 @@
 .subscribe {
-  padding: 0 72px 142px;
+  padding: 2px 72px 143px;
   text-align: center;
   margin: 0 auto;
 }
@@ -28,6 +28,7 @@
 .input-email {
   box-sizing: border-box;
   background-color: #f2f2f2;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   width: 600px;

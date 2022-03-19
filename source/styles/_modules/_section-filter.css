@@ -1,6 +1,6 @@
 .section-filter {
   display: flex;
-  padding: 45px 72px;
+  padding: 44px 72px;
   margin-bottom: 15px;
 }
 
@@ -16,10 +16,10 @@
 }
 
 .select-control {
-  font-family: "Pt Sans", sans-serif;
+  font-family: inherit;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
-  padding: 8px 24px 14px 16px;
+  padding: 8px 22px 13px 18px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
