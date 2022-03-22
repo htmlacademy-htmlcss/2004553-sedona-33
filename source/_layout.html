@@ -120,7 +120,7 @@
     </p>
   </footer>
   <!-- Модальное окно -->
-  <!-- <div class="modal-container">
+  <div class="modal-container">
     <div class="modal modal-search">
       <button class="modal-close-button" type="button">
         <span class="visually-hidden">
@@ -141,48 +141,40 @@
                 </span>
                 <input type="text" name="date-in" placeholder="27 апреля 2020" class="date-form">
               </label>
-              <button type="button" class="date-form-button"></button>
+              <button type="button" class="date-form-button date-form-button-in"></button>
             </p>
             <p class="field-group">
               <label class="search-form-label">
                 <span class="modal-form">
                   Дата выезда:
                 </span>
-                <input type="text" name="date-out" placeholder="01 сентября 2021" class="date-form">
+                <input type="text" name="date-out" placeholder="1 сентября 2021" class="date-form">
               </label>
-              <button type="button" class="date-form-button"></button>
+              <button type="button" class="date-form-button date-form-button-out"></button>
             </p>
           </fieldset>
           <fieldset class="modal-field-form modal-field-form-bottom">
             <legend class="visually-hidden">Выбор количества проживающих.</legend>
             <p class="field-group field-group-bottom">
-              <label for="adult-value" class="search-form-label">
+              <label for="adult-value" class="search-form-label-bottom">
                 <span class="modal-form">
-                  Взрослые
+                  Взрослые:
                 </span>
               </label>
-              <button class="button-modal-field" type="button">
-                -
-              </button>
-              <input id="adult-value" type="number" name="adult" placeholder="2">
-              <button class="button-modal-field" type="button">
-                +
-              </button>
+              <!-- <button class="button-modal-field" type="button"></button> -->
+              <input id="adult-value" type="number" name="adult" placeholder="2" class="modal-input-bottom">
+              <!-- <button class="button-modal-field" type="button"></button> -->
             </p>
             <p class="field-group field-group-bottom">
-              <label for="children-value" class="search-form-label">
+              <label for="children-value" class="search-form-label-bottom">
                 <span class="modal-form">
                   Дети
                 </span>
               </label>
               </span>
-              <button class="button-modal-field" type="button">
-                -
-              </button>
-              <input id="children-value" type="number" name="children" placeholder="1">
-              <button class="button-modal-field" type="button">
-                +
-              </button>
+              <!-- <button class="button-modal-field" type="button"></button> -->
+              <input id="children-value" type="number" name="children" placeholder="1" class="modal-input-bottom">
+              <!-- <button class="button-modal-field" type="button"></button> -->
               </label>
             </p>
           </fieldset>
@@ -192,7 +184,7 @@
         </form>
       </section>
     </div>
-  </div> -->
+  </div>
 </body>
 
 </html>

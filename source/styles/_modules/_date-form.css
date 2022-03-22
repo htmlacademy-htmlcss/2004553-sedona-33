@@ -3,8 +3,45 @@
   font-size: 18px;
   line-height: 40px;
   font-family: inherit;
+  width: 420px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 3px 3px 7px 19px;
+  position: relative;
+  border: none;
 }
 
 .date-form::placeholder {
   color: #000000;
+}
+
+.date-form-button {
+  background-color: transparent;
+  border: none;
+}
+
+.date-form-button::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #a9a9a9;
+  mask-image: url("..//..//images/svg/icon-calendar.svg");
+}
+
+.date-form-button-in {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.date-form-button-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.field-group-bottom:last-child > .search-form-label-bottom {
+  text-align: center;
 }
