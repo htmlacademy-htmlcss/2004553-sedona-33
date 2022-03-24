@@ -39,6 +39,9 @@
 .modal-input-bottom {
   width: 133px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
 }
 
 .modal-close-button::after {

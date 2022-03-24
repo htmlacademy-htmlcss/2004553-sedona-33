@@ -13,10 +13,7 @@
 }
 
 .header-logo-link {
-  box-sizing: border-box;
-  display: block;
-  margin-right: 30px;
-  padding: 0;
+  margin-right: 32px;
 }
 
 .header-logo {

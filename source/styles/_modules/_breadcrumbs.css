@@ -5,7 +5,6 @@
   margin: -5px 0 0 -2px;
   list-style-type: none;
   position: relative;
-  margin-top: -5px;
 }
 
 .breadcrumbs-item {
@@ -27,12 +26,9 @@
 }
 
 .breadcrumbs-link-icon::before {
-  position: relative;
   content: "";
   height: 12px;
   width: 12px;
-  top: 0;
-  left: -3px;
   mask-image: url("../images/svg/icon-home-page.svg");
   background-color: currentColor;
   margin: auto;

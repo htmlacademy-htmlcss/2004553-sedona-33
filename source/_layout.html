@@ -185,6 +185,15 @@
       </section>
     </div>
   </div>
+  {% if isDev %}
+  <script>
+    window.pinegladePP = {
+      breakpoints: [1200, 1199],
+      ext: 'png'
+    };
+  </script>
+  <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js"></script>
+  {% endif %}
 </body>
 
 </html>

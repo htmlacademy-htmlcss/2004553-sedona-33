@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 
 body {
@@ -13,4 +13,5 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px var rgba(0, 0, 0, 0.2);
 }

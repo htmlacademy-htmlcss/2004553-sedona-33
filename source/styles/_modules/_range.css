@@ -73,6 +73,7 @@
   border-radius: 0 4px 4px 0;
   border-color: transparent;
 }
+
 .range-label:first-child:active {
   background-color: #756257;
 }

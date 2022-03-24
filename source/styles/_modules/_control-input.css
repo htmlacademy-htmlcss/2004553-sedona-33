@@ -50,7 +50,7 @@
   width: 13px;
   height: 10px;
   mask-image: url("../images/svg/icon-mark.svg");
-  background-color: #000000;
+  background-color: #3f5e72;
 }
 
 .control-input[type="radio"]:checked + .control-span::after {
@@ -61,5 +61,5 @@
   width: 10px;
   height: 10px;
   mask-image: url("../images/svg/icon-radio.svg");
-  background-color: #000000;
+  background-color: #3f5e72;
 }

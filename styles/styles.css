@@ -16,7 +16,7 @@
 
 html {
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 
 body {
@@ -29,6 +29,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px var rgba(0, 0, 0, 0.2);
 }
 
 .advantage-text {
@@ -170,7 +171,6 @@ body {
   margin: -5px 0 0 -2px;
   list-style-type: none;
   position: relative;
-  margin-top: -5px;
 }
 
 .breadcrumbs-item {
@@ -192,12 +192,9 @@ body {
 }
 
 .breadcrumbs-link-icon::before {
-  position: relative;
   content: "";
   height: 12px;
   width: 12px;
-  top: 0;
-  left: -3px;
   -webkit-mask-image: url("../images/svg/icon-home-page.svg");
           mask-image: url("../images/svg/icon-home-page.svg");
   background-color: currentColor;
@@ -411,7 +408,7 @@ body {
   height: 10px;
   -webkit-mask-image: url("../images/svg/icon-mark.svg");
           mask-image: url("../images/svg/icon-mark.svg");
-  background-color: #000000;
+  background-color: #3f5e72;
 }
 
 .control-input[type="radio"]:checked + .control-span::after {
@@ -423,7 +420,7 @@ body {
   height: 10px;
   -webkit-mask-image: url("../images/svg/icon-radio.svg");
           mask-image: url("../images/svg/icon-radio.svg");
-  background-color: #000000;
+  background-color: #3f5e72;
 }
 
 .date-form {
@@ -561,10 +558,7 @@ body {
 }
 
 .header-logo-link {
-  box-sizing: border-box;
-  display: block;
-  margin-right: 30px;
-  padding: 0;
+  margin-right: 32px;
 }
 
 .header-logo {
@@ -801,10 +795,6 @@ body {
   margin-right: 161px;
 }
 
-.hotel-filter-group:last-of-type {
-  margin-right: 74px;
-}
-
 .hotel-filter-title {
   margin-bottom: 31px;
   padding: 0;
@@ -860,7 +850,7 @@ body {
 }
 
 .header-inner-title {
-  margin: 0 0 0 4px;
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -917,6 +907,9 @@ body {
 .modal-input-bottom {
   width: 133px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
 }
 
 .modal-close-button::after {
@@ -1044,6 +1037,57 @@ body {
   margin-left: auto;
 }
 
+.order-card {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  outline-offset: -2px;
+  outline: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.order-card-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.order-card-list {
+  outline: 2px solid #000000;
+}
+
+.order-card::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  margin: auto;
+}
+
+.order-card-list::after {
+  -webkit-mask-image: url("../images/svg/icon-title.svg");
+          mask-image: url("../images/svg/icon-title.svg");
+}
+
+.order-card-slide::after {
+  -webkit-mask-image: url("../images/svg/icon-slide-show.svg");
+          mask-image: url("../images/svg/icon-slide-show.svg");
+}
+
+.order-card-tile::after {
+  -webkit-mask-image: url("../images/svg/icon-list.svg");
+          mask-image: url("../images/svg/icon-list.svg");
+}
+
+.order-card:hover {
+  outline: 2px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.order-card:focus {
+  outline: 2px solid #83b3d3;
+  border-radius: 4px;
+}
+
 .page-footer {
   display: flex;
   padding: 22px 72px;
@@ -1129,27 +1173,6 @@ body {
 .pagination-link:active {
   background-color: #68a2ca;
   color: rgb(255, 255, 255, 0.3);
-}
-
-.select-number-page {
-  margin-left: 51px;
-  padding: 11px 16px 10px;
-  width: 158px;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 23px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: 2px solid #e6e6e6;
-  border-radius: 4px;
-  border: none;
-  margin-top: -2px;
-  color: #333333;
-}
-
-.select-number-page:focus {
-  outline: 2px solid #83b3d3;
 }
 
 .range-target {
@@ -1326,6 +1349,50 @@ body {
   padding-right: 40px;
 }
 
+.select-wrapper {
+  width: 27%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 12px;
+  height: 7px;
+  -webkit-mask-image: url("../images/svg/arrow-down-icon.svg");
+          mask-image: url("../images/svg/arrow-down-icon.svg");
+  background-color: #e6e6e6;
+}
+
+.select-wrapper:active::after {
+  background-color: rgb(230, 230, 230, 0.3);
+}
+
+.select-number-page {
+  margin-left: 51px;
+  padding: 11px 16px 10px;
+  width: 158px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 2px solid #e6e6e6;
+  border-radius: 4px;
+  border: none;
+  margin-top: -2px;
+  color: #333333;
+}
+
+.select-number-page:focus {
+  outline: 2px solid #83b3d3;
+}
+
 .select-control {
   font-family: inherit;
   border: 2px solid #e6e6e6;
@@ -1351,80 +1418,6 @@ body {
 
 .select-control:active {
   opacity: 0.3;
-}
-
-.order-card {
-  display: flex;
-  width: 48px;
-  height: 48px;
-  outline-offset: -2px;
-  outline: 2px solid #e6e6e6;
-  border-radius: 4px;
-}
-
-.order-card-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.order-card-list {
-  outline: 2px solid #000000;
-}
-
-.order-card::after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: #000000;
-  margin: auto;
-}
-
-.order-card-list::after {
-  -webkit-mask-image: url("../images/svg/icon-title.svg");
-          mask-image: url("../images/svg/icon-title.svg");
-}
-
-.order-card-slide::after {
-  -webkit-mask-image: url("../images/svg/icon-slide-show.svg");
-          mask-image: url("../images/svg/icon-slide-show.svg");
-}
-
-.order-card-tile::after {
-  -webkit-mask-image: url("../images/svg/icon-list.svg");
-          mask-image: url("../images/svg/icon-list.svg");
-}
-
-.order-card:hover {
-  outline: 2px solid #83b3d3;
-  border-radius: 4px;
-}
-
-.order-card:focus {
-  outline: 2px solid #83b3d3;
-  border-radius: 4px;
-}
-
-.select-wrapper {
-  width: 27%;
-  margin-right: 20px;
-  position: relative;
-}
-
-.select-wrapper::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 12px;
-  height: 7px;
-  -webkit-mask-image: url("../images/svg/arrow-down-icon.svg");
-          mask-image: url("../images/svg/arrow-down-icon.svg");
-  background-color: #e6e6e6;
-}
-
-.select-wrapper:active::after {
-  background-color: rgb(230, 230, 230, 0.3);
 }
 
 .show-more {
