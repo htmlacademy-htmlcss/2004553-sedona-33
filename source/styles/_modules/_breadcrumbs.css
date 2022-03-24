@@ -19,6 +19,7 @@
   height: 20px;
   color: #ffffff;
   outline-offset: 1px;
+  text-decoration: none;
 }
 
 .breadcrumbs-link-icon {

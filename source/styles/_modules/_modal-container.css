@@ -99,7 +99,7 @@
 .search-form {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 44px;
+  row-gap: 47px;
 }
 
 .modal-form-button {
@@ -110,4 +110,6 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
 }

@@ -185,6 +185,7 @@ body {
   height: 20px;
   color: #ffffff;
   outline-offset: 1px;
+  text-decoration: none;
 }
 
 .breadcrumbs-link-icon {
@@ -968,7 +969,7 @@ body {
 .search-form {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 44px;
+  row-gap: 47px;
 }
 
 .modal-form-button {
@@ -979,6 +980,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
 
 .number-span {
