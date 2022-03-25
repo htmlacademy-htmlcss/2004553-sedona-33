@@ -1,0 +1,48 @@
+.tooltip {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  top: 14px;
+  right: 153px;
+  border-radius: 50%;
+  background-color: #68a2ca;
+}
+
+.tooltip::after {
+  display: block;
+  margin: auto;
+  content: "";
+  width: 1px;
+  height: 9px;
+  mask-image: url("../images/svg/icon-info.svg");
+  background-color: #ffffff;
+}
+
+.tooltip-bottom {
+  position: absolute;
+  padding: 19px 18px 24px 22px;
+  top: 54px;
+  right: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f2f2f2;
+  line-height: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  width: 216px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-bottom::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: 119px;
+  display: block;
+  width: 19px;
+  height: 9px;
+  mask-image: url("../images/svg/icon-triangle.svg");
+  background-color: #333333;
+}

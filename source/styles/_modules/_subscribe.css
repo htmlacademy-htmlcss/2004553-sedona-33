@@ -38,6 +38,17 @@
   outline-offset: -3px;
 }
 
+/* Класс .input-email будет добавляться с помощью js */
+
+.input-email:not(:-moz-placeholder-shown) {
+  border-color: #83b3d3;
+}
+
+.input-email-invalid,
+.input-email:not(:placeholder-shown) {
+  border-color: #83b3d3;
+}
+
 .input-email:hover {
   background-color: #e6e6e6;
 }

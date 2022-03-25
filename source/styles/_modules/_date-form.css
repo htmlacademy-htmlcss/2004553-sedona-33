@@ -8,8 +8,19 @@
   border-radius: 4px;
   box-sizing: border-box;
   padding: 3px 3px 7px 19px;
-  position: relative;
   border: none;
+}
+
+.date-form:hover {
+  background-color: #e6e6e6;
+}
+
+.date-form:focus-within {
+  outline: 3px solid #83b3d3;
+}
+
+.date-form:active {
+  outline: 2px solid #000000;
 }
 
 .date-form::placeholder {
@@ -19,6 +30,7 @@
 .date-form-button {
   background-color: transparent;
   border: none;
+  position: absolute;
 }
 
 .date-form-button::after {
@@ -26,22 +38,16 @@
   display: block;
   width: 15px;
   height: 15px;
-  background-color: #a9a9a9;
-  mask-image: url("..//..//images/svg/icon-calendar.svg");
+  background-color: rgba(0, 0, 0, 0.3);
+  mask-image: url("../images/svg/icon-calendar.svg");
 }
 
 .date-form-button-in {
-  position: absolute;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 13px;
 }
 
 .date-form-button-out {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.field-group-bottom:last-child > .search-form-label-bottom {
-  text-align: center;
+  top: 17px;
+  right: 13px;
 }
