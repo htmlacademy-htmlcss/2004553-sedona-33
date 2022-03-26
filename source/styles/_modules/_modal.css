@@ -9,7 +9,7 @@
 }
 
 .modal {
-  margin: auto;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -149,10 +149,10 @@
   padding: 3px 20px 7px;
   border: none;
 }
-
+/*
 .modal-input-bottom::placeholder {
   color: #000000;
-}
+} */
 
 .modal-input-bottom:hover {
   background-color: #e6e6e6;

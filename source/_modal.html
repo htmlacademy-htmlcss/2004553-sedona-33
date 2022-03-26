@@ -19,6 +19,7 @@
                 Дата заезда:
               </span>
               <input type="text" name="date-in" placeholder="27 апреля 2020" class="date-form">
+              <span class="modal-info modal-info-error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <button type="button" class="date-form-button date-form-button-in">
               <span class="visually-hidden">Выберите дату заезда</span>
@@ -30,6 +31,7 @@
                 Дата выезда:
               </span>
               <input type="text" name="date-out" placeholder="1 сентября 2021" class="date-form">
+              <span class="modal-info">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <button type="button" class="date-form-button date-form-button-out">
               <span class="visually-hidden">Выберите дату заезда</span>
@@ -44,20 +46,46 @@
                 Взрослые:
               </span>
             </label>
-            <button class="button-modal-field" type="button"></button>
+            <button class="button-modal-field button-modal-field-minus" type="button">
+              <span class="visually-hidden">
+                Кнопка отнимать.
+              </span>
+            </button>
             <input id="adult-value" type="number" name="adult" placeholder="2" class="modal-input-bottom">
-            <button class="button-modal-field" type="button"></button>
+            <button class="button-modal-field button-modal-field-plus" type="button">
+              <span class="visually-hidden">
+                Кнопка прибавлять.
+              </span>
+            </button>
           </p>
           <p class="field-group field-group-bottom">
             <label for="children-value" class="search-form-label-bottom">
               <span class="modal-form">
-                Дети
+                Дети:
               </span>
             </label>
+            <span class="tooltip">
+              <span class="visually-hidden">
+                Дополнительная информация
+              </span>
             </span>
-            <!-- <button class="button-modal-field" type="button"></button> -->
+            <span class="tooltip-bottom">
+              Укажите количество детей, <br>
+              которые будут с вами, возраст
+              <br> которых от 6 до 18 лет. Дети
+              <br> до 6 лет размещаются бесплатно.
+            </span>
+            <button class="button-modal-field button-modal-field-minus" type="button">
+              <span class="visually-hidden">
+                Кнопка отнимать.
+              </span>
+            </button>
             <input id="children-value" type="number" name="children" placeholder="1" class="modal-input-bottom">
-            <!-- <button class="button-modal-field" type="button"></button> -->
+            <button class="button-modal-field button-modal-field-plus" type="button">
+              <span class="visually-hidden">
+                Кнопка прибавлять.
+              </span>
+            </button>
             </label>
           </p>
         </fieldset>
@@ -67,4 +95,4 @@
       </form>
     </section>
   </div>
- </div>
+</div>

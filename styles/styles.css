@@ -882,7 +882,7 @@ img {
 }
 
 .modal {
-  margin: auto;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -1026,13 +1026,10 @@ img {
   border: none;
 }
 
-.modal-input-bottom::-moz-placeholder {
-  color: #000000;
-}
-
+/*
 .modal-input-bottom::placeholder {
   color: #000000;
-}
+} */
 
 .modal-input-bottom:hover {
   background-color: #e6e6e6;
@@ -1766,7 +1763,7 @@ img {
   top: 14px;
   right: 153px;
   border-radius: 50%;
-  background-color: #68a2ca;
+  background-color: #83b3d3;
 }
 
 .tooltip::after {
