@@ -277,7 +277,6 @@ img {
   background-color: #83b3d3;
   border: none;
   cursor: pointer;
-  outline-offset: -2px;
   padding: 16px 14px 17px;
 }
 
@@ -494,14 +493,15 @@ img {
 }
 
 .footer-logo-link {
-  display: block;
+  display: flex;
   position: relative;
+  padding: 19px 22px;
+  margin-right: -22px;
 }
 
 .footer-logo-link:focus {
   outline: 3px solid #83b3d3;
-  border-radius: 4px;
-  outline-offset: 10px;
+  border-radius: 10px;
 }
 
 .footer-logo {
@@ -509,12 +509,16 @@ img {
 }
 
 .footer-logo-link::after {
-  width: 115px;
+  margin: auto;
+  width: 114px;
   height: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: block;
   content: "";
-  position: absolute;
-  top: 1px;
   -webkit-mask-image: url("../images/svg/logo-htmlacademy.svg");
           mask-image: url("../images/svg/logo-htmlacademy.svg");
   background-color: #000000;
@@ -1226,7 +1230,7 @@ img {
 
 .page-footer {
   display: flex;
-  padding: 22px 72px;
+  padding: 19px 72px;
 }
 
 .pagination-title {
@@ -1501,7 +1505,7 @@ img {
   height: 7px;
   -webkit-mask-image: url("../images/svg/arrow-down-icon.svg");
           mask-image: url("../images/svg/arrow-down-icon.svg");
-  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .select-wrapper:active::after {
@@ -1542,18 +1546,21 @@ img {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: #ffffff;
 }
 
 .select-control:hover {
+  outline-offset: -2px;
   outline: 2px solid #83b3d3;
 }
 
 .select-control:focus {
+  outline-offset: -2px;
   outline: 2px solid #83b3d3;
 }
 
 .select-control:active {
-  opacity: 0.3;
+  background-color: rgb(230, 230, 230, 0.3);
 }
 
 .show-more {
@@ -1604,16 +1611,19 @@ img {
 .social-media-link {
   position: relative;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 12px 10px;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 
 .social-media-link::before {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   display: block;
   content: "";
   width: 20px;
@@ -1630,7 +1640,7 @@ img {
 }
 
 .social-media-link:focus {
-  outline: 3px solid #83b3d3;
+  border: 3px solid #83b3d3;
   border-radius: 10px;
 }
 
@@ -1687,21 +1697,20 @@ img {
   font-size: 18px;
   line-height: 26px;
   width: 600px;
-  padding: 19px 22px 15px;
+  padding: 15px 22px 15px;
   border-radius: 10px 0 0 10px;
-  border: none;
-  outline-offset: -3px;
+  border: 2px solid transparent;
 }
 
-/* Класс .input-email будет добавляться с помощью js */
+/* Класс .input-email-invalid будет добавляться с помощью js */
 
-.input-email:not(:-moz-placeholder-shown) {
-  border-color: #83b3d3;
+.input-email:invalid:not(:-moz-placeholder-shown) {
+  border-color: #ff5757;
 }
 
 .input-email-invalid,
-.input-email:not(:placeholder-shown) {
-  border-color: #83b3d3;
+.input-email:invalid:not(:placeholder-shown) {
+  border-color: #ff5757;
 }
 
 .input-email:hover {
@@ -1711,11 +1720,6 @@ img {
 .input-email:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
-}
-
-.input-email:invalid {
-  background-color: #ffffff;
-  outline: 3px solid #ff5757;
 }
 
 .subscribe-alter {

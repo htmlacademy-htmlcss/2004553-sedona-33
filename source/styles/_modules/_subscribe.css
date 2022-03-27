@@ -32,21 +32,15 @@
   font-size: 18px;
   line-height: 26px;
   width: 600px;
-  padding: 19px 22px 15px;
+  padding: 15px 22px 15px;
   border-radius: 10px 0 0 10px;
-  border: none;
-  outline-offset: -3px;
+  border: 2px solid transparent;
 }
 
-/* Класс .input-email будет добавляться с помощью js */
-
-.input-email:not(:-moz-placeholder-shown) {
-  border-color: #83b3d3;
-}
-
+/* Класс .input-email-invalid будет добавляться с помощью js */
 .input-email-invalid,
-.input-email:not(:placeholder-shown) {
-  border-color: #83b3d3;
+.input-email:invalid:not(:placeholder-shown) {
+  border-color: #ff5757;
 }
 
 .input-email:hover {
@@ -56,11 +50,6 @@
 .input-email:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
-}
-
-.input-email:invalid {
-  background-color: #ffffff;
-  outline: 3px solid #ff5757;
 }
 
 .subscribe-alter {
